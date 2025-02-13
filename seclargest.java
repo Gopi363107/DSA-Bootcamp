@@ -16,19 +16,23 @@ public class seclargest{
             arr[i]=sc.nextInt();
         }
 
+        //your original array
         System.out.println("your original array :");
         System.out.println(Arrays.toString(arr));
 
+        //main logic for getting second largest in an array
         int max=arr[0];
         int smax=Integer.MAX_VALUE;
         for(int i=1;i<arr.length;i++){
             if(arr[i]>max){
-                max=arr[i];
-                if(arr[i]<smax){
-                    smax=arr[i];
-                }
+                smax=max;
+                max=arr[i];    
+            }
+            else if(arr[i] < max && arr[i]>smax ) {
+                smax=arr[i];
             }
         }
+
         //print the second largest value
         System.out.println("your second largest value is :"+smax);
 

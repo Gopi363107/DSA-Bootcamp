@@ -3,19 +3,20 @@ import java.util.Arrays;
 
 public class removeduplicates {
 
-    static boolean arraySortedOrNot(int[] arr){
-        //main logic
-        for(int i=1;i<arr.length;i++){
-            if(arr[i]>=arr[i-1]){
-
-            }
-            else{
-                return false;
+    static int OriginalElements(int[] arr){
+        int i=0;
+        for(int j=1;j<arr.length;j++){
+            if(arr[i]!=arr[j]){
+                arr[i+1]=arr[j];
+                i++;
             }
         }
-        return true;
+        
+        return i+1;
     }
 
+    //time complexity O(N)
+    //space complexity O(1)
     public static void main(String args[]){
         Scanner sc=new Scanner(System.in);
         System.out.println("enter the value of n ");
@@ -26,6 +27,6 @@ public class removeduplicates {
         for(int i=0;i<n;i++){
             arr[i]=sc.nextInt();
         }
-        System.out.println(arraySortedOrNot(arr));
+        System.out.println(OriginalElements(arr));
     }    
 }

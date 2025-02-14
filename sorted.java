@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class sorted {
 
+    // O(N) -O(1)
     //main logic
     public static void main(String args[]){
         Scanner sc=new Scanner(System.in);

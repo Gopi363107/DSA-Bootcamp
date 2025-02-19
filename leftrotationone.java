@@ -9,15 +9,16 @@ public class leftrotationone {
 
     //optimal approach
 
-    static int LeftRotationOne(int arr[]){
-        int temp=arr[0];
+    public static void LeftRotationOne(int arr[]){
+        int arr1=arr[0];
         int n=arr.length;
+        
         for(int i=1;i<n;i++){
             arr[i-1]=arr[i];
         }
-        arr[n-1]=temp;
+        arr[n-1]=arr1;
         
-        return arr;
+        
     }
 
     //main logic
@@ -34,7 +35,10 @@ public class leftrotationone {
         for(int i=0;i<n;i++){
             arr[i]=sc.nextInt();
         }
-        System.out.println(LeftRotationOne(arr));
+        LeftRotationOne(arr);
+        for(int num:arr){
+            System.out.print(num+" ");
+        }
         
     }
     

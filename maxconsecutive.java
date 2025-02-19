@@ -35,7 +35,7 @@ public class maxconsecutive {
     //main function
     public static void main(String args[]){
         Scanner in=new Scanner (System.in);
-
+        
         //get n value from user
         System.out.println("enter the value of n :");
         int n=in.nextInt();

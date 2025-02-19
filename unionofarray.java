@@ -59,7 +59,7 @@ public class unionofarray {
         }
         ArrayList<Integer> res=setunion(a ,b );
         for(int num:res){
-            System.out.println( num +" ");
+            System.out.print( num +" ");
         }
             
     }

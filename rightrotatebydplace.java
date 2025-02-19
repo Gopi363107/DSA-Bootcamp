@@ -7,7 +7,7 @@ import java.lang.System;
 
 public class rightrotatebydplace {
 
-    public static void  rightRotaion(int [] arr,int d){
+    public static void rotateArr(int [] arr,int d){
         int n=arr.length;
         d=d%n;
 
@@ -21,7 +21,7 @@ public class rightrotatebydplace {
         reverse(arr,d,n-1);
     }
 
-    public static reverse(int []arr,int start,int end){
+    public static void  reverse (int []arr,int start,int end){
 
         while(start<end){
             int temp=arr[start];
@@ -31,10 +31,10 @@ public class rightrotatebydplace {
             end--;
 
         }
-        return arr;
-    
-        
+         
     }
+
+    
 
 
     //main function
@@ -58,7 +58,7 @@ public class rightrotatebydplace {
         //find the value of number of rotation
         int d=sc.nextInt();
 
-        rightRotation(arr);
+        rotateArr(arr,d);
 
         System.out.println("optimal approach (rotated array): "+Arrays.toString(arr));
         sc.close();

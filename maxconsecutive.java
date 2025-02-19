@@ -51,8 +51,7 @@ public class maxconsecutive {
         System.out.println("OPTIMAL APPROACH-1 ");
         System.out.println(MaxConsecutiveOnes(arr));
 
-        System.out.println("OPTIMAL APPROACH-2 ");
-        System.out.println(Maxcosecutiveone(arr));
+        
     }
     
 }

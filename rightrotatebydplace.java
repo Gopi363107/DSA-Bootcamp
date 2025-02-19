@@ -21,7 +21,7 @@ public class rightrotatebydplace {
         reverse(arr,d,n-1);
     }
 
-    public static void reverse(int []arr,int start,int end){
+    public static reverse(int []arr,int start,int end){
 
         while(start<end){
             int temp=arr[start];
@@ -31,9 +31,11 @@ public class rightrotatebydplace {
             end--;
 
         }
+        return arr;
     
         
     }
+
 
     //main function
     public static void main(String args[]){

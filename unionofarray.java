@@ -8,28 +8,39 @@ import java.util.ArrayList;
 public class unionofarray {
 
     //main logic
-    public static ArrayList<Integer> setunion(int [] a,int [] b){
-        HashSet<Integer> st=new HashSet<>();
-        //st means hashset put all the values in the hashset
-
-        //put the all elements of a[] in st
-        for(int num:a){
-            st.add(num);
-        }
-
-        //put the all elements of b[] in st
-        for(int num :b){
-            st.add(num);
-        }
+    public static ArrayList<Integer> setunion(int [] a,int [] b, int n,int m){
+        int i=0;
+        int j=0;
 
         //create array list
-        ArrayList<Integer> res=new ArrayList<>();
+        ArrayList<Integer> union=new ArrayList<>();
 
-        for(int it:st){
-            res.add(it);
+        while(i < n && j < m){
+            if(a[i] <= b[j]){
+                if(union.size() == 0 || union.get(union.size()-1) != a[i] )
+                    union.add(a[i]);
+                i++;        
+            }
+            else{
+                if(union.size() == 0 || union.get(union.size()-1) != b[j] )
+                  union.add(b[j]);
+                j++;  
+            }
         }
 
-        return res;
+        while(i<n){
+            if(union.get(union.size()-1) != a[i])
+              union.add(a[i]);
+            i++; 
+        }
+
+        while(j<m){
+            if(union.size() == 0 || union.get(union.size()-1) != b[j] )
+              union.add(b[j]);
+            j++; 
+        }
+
+        return union;
     }
 
 
@@ -38,27 +49,28 @@ public class unionofarray {
     public static void main(String args[]){
         Scanner sc=new Scanner(System.in);
 
-        //get n1,n2 value from the user
-        System.out.println("enter tne n1 value :");
-        int n1=sc.nextInt();
+        //get n,m value from the user
+        System.out.println("enter tne n value :");
+        int n=sc.nextInt();
 
-        System.out.println("enter the n2 value :");
-        int n2=sc.nextInt();
+        System.out.println("enter the m value :");
+        int m=sc.nextInt();
 
         System.out.println("enter the values for array a :");
-        int[] a=new int[n1];
+        int[] a=new int[n];
 
-        for(int i=0;i<n1;i++){
+        for(int i=0;i<n;i++){
             a[i]=sc.nextInt();
         }
         System.out.println("enter the values for array b :");
-        int[] b=new int[n2];
+        int[] b=new int[m];
 
-        for(int i=0;i<n1;i++){
+        for(int i=0;i<m;i++){
             b[i]=sc.nextInt();
         }
-        ArrayList<Integer> res=setunion(a ,b );
-        for(int num:res){
+        ArrayList<Integer> union=setunion(a ,b ,n ,m );
+        System.out.println("union of two sorted array :");
+        for(int num:union){
             System.out.print( num +" ");
         }
             

@@ -17,10 +17,6 @@ public class leftrotationdplace {
 
         //reverse the entire array 0 to n-1
         reverse(arr,0,n-1);
-
-        
-
-
     }
 
     public static void reverse(int [] arr,int start,int end){
@@ -32,8 +28,6 @@ public class leftrotationdplace {
             end--;
 
         }
-        
-
     
     }
 

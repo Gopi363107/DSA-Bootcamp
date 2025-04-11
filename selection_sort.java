@@ -1,7 +1,4 @@
-//to sort the array using 
-//time complexity : O(N^2)
-//space complexity : O(1)
-import java.io.*;
+
 import java.util.Scanner;
 
 public class selection_sort {
@@ -50,6 +47,7 @@ public class selection_sort {
         }
         System.out.println();
         sorted(arr,n);
+        sc.close();
     }
     
 }

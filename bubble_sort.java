@@ -2,7 +2,7 @@
 //time complexity : O(N^2) N-->size of the array
 //space complexity : O(1)
 import java.util.Scanner;
-import java.io.*;
+
 
 
 public class bubble_sort {
@@ -29,7 +29,7 @@ public class bubble_sort {
 
     //main function
     public static void main(String args[]){
-        Scanner sc=new Scanner(System.in);
+        Scanner sc =new Scanner(System.in);
 
         //to get n value from user
         System.out.println("enter the value of n :");
@@ -48,7 +48,7 @@ public class bubble_sort {
         }
         System.out.println();
         sorted(n,arr);
-
+        sc.close();
     }
 
     

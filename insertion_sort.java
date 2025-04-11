@@ -2,7 +2,7 @@
 //time complexity :
 //space complexity :
 import java.util.Scanner;
-import java.io.*;
+
 
 
 public class insertion_sort {
@@ -44,6 +44,6 @@ public class insertion_sort {
         }
         System.out.println();
         sorted(arr , n);
-
+        sc.close();
     }
 }

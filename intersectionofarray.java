@@ -2,7 +2,7 @@
 
 import java.util.ArrayList;
 import java.util.Scanner;
-import java.util.Arrays;
+
 
 public class intersectionofarray {
     //optimal approach
@@ -60,6 +60,6 @@ public class intersectionofarray {
         for(int i = 0; i < ans.size();i++){
             System.out.print( ans.get(i) +" ");
         }
-            
+        sc.close();    
     }
 }

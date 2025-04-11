@@ -1,4 +1,4 @@
-import java.util.Arrays;
+
 import java.util.Scanner;
 
 public class min {
@@ -25,6 +25,7 @@ public class min {
         }
 
         System.out.println("minimum value in an array "+minval);
+        sc.close();
     }
     
 }

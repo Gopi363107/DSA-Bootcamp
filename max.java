@@ -1,4 +1,4 @@
-import java.util.Arrays;
+
 import java.util.Scanner;
 
 public class max{
@@ -29,6 +29,6 @@ public class max{
        System.out.println("Maximum value in an array "+maxval);
     
 
-
+        in.close();
     }
 }

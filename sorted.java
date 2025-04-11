@@ -1,5 +1,5 @@
 //check if the array is sorted
-import java.util.Arrays;
+
 import java.util.Scanner;
 
 public class sorted {
@@ -14,6 +14,7 @@ public class sorted {
             arr[i]=sc.nextInt();
         }
         System.out.println(SortedOrNot(arr));
+        sc.close();
     } 
 
     //sub function
@@ -31,5 +32,5 @@ public class sorted {
 
     }
         
-    
+
 }

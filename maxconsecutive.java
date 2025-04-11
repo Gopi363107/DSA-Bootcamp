@@ -1,7 +1,6 @@
 //maximum consecutive one's
-import java.util.Arrays;
+
 import java.util.Scanner;
-import java.io.*;
 
 public class maxconsecutive {
 
@@ -51,7 +50,7 @@ public class maxconsecutive {
         System.out.println("OPTIMAL APPROACH-1 ");
         System.out.println(MaxConsecutiveOnes(arr));
 
-        
+        in.close();
     }
     
 }

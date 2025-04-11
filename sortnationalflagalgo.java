@@ -21,7 +21,7 @@ public class sortnationalflagalgo {
                 mid++;
             }
             else {
-                int temp = arr.get(mid);
+                arr.get(mid);
                 arr.set(mid, arr.get(high));
                 arr.set(high , mid);
 

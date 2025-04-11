@@ -1,7 +1,7 @@
 //find the union of array
-import java.util.Arrays;
+
 import java.util.Scanner;
-import java.util.HashSet;
+
 import java.util.ArrayList;
 
 
@@ -73,6 +73,7 @@ public class unionofarray {
         for(int num:union){
             System.out.print( num +" ");
         }
+        sc.close();
             
     }
 

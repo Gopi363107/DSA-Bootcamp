@@ -1,7 +1,7 @@
 //right rotation by d places
 import java.util.Scanner;
 import java.util.Arrays;
-import java.io.*;
+
 import java.lang.System;
 
 

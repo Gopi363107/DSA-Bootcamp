@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.Arrays;
 
 public class sum {
     public static void main(String args[]){
@@ -20,7 +19,7 @@ public class sum {
 
         System.out.println("sum of the array element is "+sum);
 
-
+        sc.close();
     }
     
 }

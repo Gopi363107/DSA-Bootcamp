@@ -1,8 +1,6 @@
 //Left rotate the array by one place
 
 import java.util.Scanner;
-import java.util.Arrays;
-import java.io.*;
 
 
 public class leftrotationone {
@@ -39,7 +37,7 @@ public class leftrotationone {
         for(int num:arr){
             System.out.print(num+" ");
         }
-        
+        sc.close();
     }
     
 }

@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.Arrays;
 
 public class removeduplicates {
 
@@ -28,5 +27,6 @@ public class removeduplicates {
             arr[i]=sc.nextInt();
         }
         System.out.println(OriginalElements(arr));
+        sc.close();
     }    
 }

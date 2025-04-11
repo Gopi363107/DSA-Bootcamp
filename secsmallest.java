@@ -33,6 +33,7 @@ public class secsmallest {
             }
         }
         System.out.println("your second smallest number :"+smin);
+        sc.close();
     }
     
 }

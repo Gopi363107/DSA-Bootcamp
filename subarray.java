@@ -1,11 +1,14 @@
-import java.util.Arrays;
+
 import java.util.Scanner;
 
 public class subarray {
     public static void main(String args[] ){
+
         Scanner sc=new Scanner(System.in);
+
         System.out.println("enter the value of n : ");
         int n=sc.nextInt();
+
         System.out.println("enter the values for array :");
         int[] arr=new int[n];
 
@@ -23,11 +26,11 @@ public class subarray {
             }
         }
 
-        //print the subarrays
-       // System.out.println(Arrays.toString(arr));
+       
        for(int i=0;i<n;i++){
         System.out.println(arr[i]);
        }
+       sc.close();
     }
     
 }

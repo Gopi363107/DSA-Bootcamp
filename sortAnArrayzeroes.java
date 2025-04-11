@@ -1,13 +1,13 @@
 //sorting 0's 1's 2's in an array
-import java.util.Scanner;//  for sacnner input
-import java.util.Arrays;// for array package
-import java.util.*;// for arraylist package
+
+import java.util.*;
 
 public class sortAnArrayzeroes {
 
     public static void sortAnArray(ArrayList<Integer> arr,int n){
         
-        int cnt0 =0,cnt1 = 0,cnt2 = 0;
+        int cnt0 =0,cnt1 = 0;
+        
         for (int i = 0; i < n; i++) {
            if (arr.get(i) == 0){
                 cnt0++;
@@ -16,7 +16,7 @@ public class sortAnArrayzeroes {
                 cnt1++;
            }
            else{
-                cnt2++;
+                
            }
         }
 
@@ -44,6 +44,7 @@ public class sortAnArrayzeroes {
             
         }
         System.out.println();
+        
     }
     
 }

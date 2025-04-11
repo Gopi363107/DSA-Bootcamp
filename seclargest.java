@@ -35,6 +35,6 @@ public class seclargest{
 
         //print the second largest value
         System.out.println("your second largest value is :"+smax);
-
+        sc.close();
     }
 }

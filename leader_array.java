@@ -34,13 +34,13 @@ public class leader_array {
         int[] arr={12,3,9,6,4};
         int n = arr.length;
         ArrayList<Integer> ans = leadersinan_array(arr, n);
-        for(int it : ans){
-            System.out.print(ans+" ");
+        for(int i=0;i<ans.size();i++){
+            System.out.print(ans.get(i)+" ");
         }
         System.out.println();
         ArrayList<Integer> ans1 = leaders_of_array(arr, n);
-        for(int mpp : ans1){
-            System.out.print(ans1+" ");
+        for(int i = 0 ;i<ans1.size();i++){
+            System.out.print(ans1.get(i)+" ");
         }
     }
     

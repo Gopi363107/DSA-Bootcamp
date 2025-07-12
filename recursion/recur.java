@@ -7,7 +7,7 @@ public class recur {
         System.out.println(i);
     }
     public static void main(String[] args) {
-        int s=3;
+        int s=1;
         int e=3;
         numbers(s,e);
     }
